@@ -1,0 +1,843 @@
+/*
+*{
+    box-sizing: border-box;
+}
+*/
+
+/* Login */
+
+:focus {
+    outline: none;
+}
+
+body {
+    max-width: 100vw;
+    background-image: url(../images/logback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Tahoma, Arial;
+
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.login {
+    margin: 0 auto;
+    width: 80%;
+
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0px;
+    -webkit-box-shadow: 0px 0px 34px -1px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 0px 0px 34px -1px rgba(0, 0, 0, 0.33);
+    -o-box-shadow: 0px 0px 34px -1px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 0px 34px -1px rgba(0, 0, 0, 0.33);
+}
+
+.qickLogin {
+    margin-top: 20px;
+}
+
+.photoback {
+    background: url(../images/Login.jpg);
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.photoback img {
+    margin: 30px auto;
+    width: 200px;
+    height: 184.656px;
+
+}
+
+.form-sign,
+.form-login {
+    padding: 20px;
+    width: 100%;
+    -webkit-box-shadow: -15px 0px 36px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -15px 0px 36px 0px rgba(0, 0, 0, 0.25);
+    -o-box-shadow: -15px 0px 36px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: -15px 0px 36px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form-sign .signWithFB,
+.form-login .logWithFB {
+    width: 49%;
+    color: #FFF;
+    background-color: #3b5998;
+    padding: 15px;
+    text-decoration: none;
+    float: left;
+    border: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 5px 0;
+    border-radius: 8px;
+    height: 44px;
+    line-height: 14px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+}
+
+.form-sign .signWithFB:hover,
+.form-login .logWithFB:hover {
+    background-color: #2d477c;
+}
+
+.form-login .logWithFB span,
+.form-login .logWithG span {
+    vertical-align: text-bottom;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.form-sign .signWithG,
+.form-login .logWithG {
+    width: 49%;
+    color: #FFF;
+    background-color: #af3232;
+    padding: 15px;
+    text-decoration: none;
+    float: right;
+    border: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 5px 0;
+    border-radius: 8px;
+    height: 44px;
+    line-height: 14px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.form-sign .signWithG:hover,
+.form-login .logWithG:hover {
+    background-color: #af2b29;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .form-sign .signWithFB,
+    .form-login .logWithFB,
+
+    font-size: 13px;
+}
+
+.login {
+    margin: 70px auto 20px auto!important;
+}
+
+.photoback img {
+    margin: 142px auto !important;
+}
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .login {
+        margin: 70px auto 20px auto!important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .form-sign .signWithFB,
+    .form-sign .signWithG,
+    .form-login .logWithFB,
+    .form-login .logWithG {
+        min-width: 100%;
+        float: none;
+        font-size: 13px;
+    }
+    .photoback img {
+        margin: 30px auto !important;
+    }
+    .login {
+        margin: 70px auto 20px auto!important;
+    }
+}
+
+@media (max-width: 575px) {
+    .form-sign .signWithG,
+    .form-sign .signWithFB,
+    .form-login .logWithFB,
+    .form-login .logWithG {
+        min-width: 100%;
+        float: none;
+        font-size: 13px;
+    }
+    .photoback img {
+        margin: 30px auto !important;
+    }
+    .login {
+        margin: 70px auto 20px auto!important;
+    }
+}
+
+
+.logAcc {
+    margin: 30px auto;
+}
+
+.logAcc .logEmail,
+.logAcc .logPass {
+    width: 100%;
+    margin: 11px auto;
+    height: 80px;
+    position: relative;
+}
+
+.logAcc .logPass input[type="password"],
+.logAcc .logEmail input[type="email"] {
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 20px 20px 20px 0;
+}
+
+.logAcc .logPass lable,
+.logAcc .logEmail lable {
+    position: absolute;
+    top: 8px;
+    font-size: 20px;
+    left: 0;
+    color: #707070;
+    transition: .4s ease-in-out;
+    z-index: -1;
+}
+
+.logAcc .logPass span,
+.logAcc .logEmail span {
+    display: block;
+    background: #2b4964;
+    width: 100%;
+    height: 1px;
+}
+
+.logAcc .logPass input[type="password"]:focus + lable,
+.logAcc .logEmail input[type="email"]:focus + lable {
+    top: -17px;
+    font-size: 13px;
+    transition: .4s ease-in-out;
+    color: #af3232;
+}
+
+.hasData {
+    top: -17px !important;
+    font-size: 13px !important;
+    transition: .4s ease-in-out !important;
+    color: red !important;
+}
+
+.data-done {
+    text-align: center;
+    margin: auto;
+
+
+}
+
+.data-done .sign-btn,
+.data-done .login-btn {
+    padding: 7px 48px;
+    font-weight: bold;
+    border-radius: 28px;
+    background-color: none;
+    color: #294b69;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    margin-top: 21px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 2px solid #294b69;
+
+}
+
+.data-done .sign-btn:hover,
+.data-done .login-btn:hover {
+    color: #fff;
+    background-color: #00b9ff;
+    border: 2px solid #00b9ff;
+}
+
+.data-done .forget-btn,
+.data-done .signUp-btn {
+    text-decoration: none;
+    color: #204566;
+    width: 100%;
+    margin-top: 8px;
+    display: inline-block;
+    font-family: tahoma;
+    transition: .3s ease-in-out;
+}
+
+.data-done .signUp-btn span {
+    text-decoration: underline;
+}
+
+.data-done .forget-btn:hover,
+.data-done .signUp-btn:hover {
+    color: #05729b;
+}
+
+
+/* SignUp */
+
+.signAcc {
+    margin: 30px auto;
+}
+
+.signPerson {
+    width: 100%;
+    margin-bottom: 88px;
+
+}
+
+.signAcc .Fname,
+.signAcc .Lname {
+    width: 49%;
+    margin: 0px auto;
+    position: relative;
+}
+
+.signAcc .Fname {
+    float: left;
+}
+
+.signAcc .Lname {
+    float: right;
+}
+
+
+
+.signAcc .signEmail,
+.signAcc .signPass,
+.signAcc .signMob {
+    width: 100%;
+    margin: 11px auto;
+    height: 80px;
+    position: relative;
+}
+
+.signAcc .Fname lable,
+.signAcc .Lname lable,
+.signAcc .signEmail lable,
+.signAcc .signPass lable,
+.signAcc .signMob lable {
+    position: absolute;
+    top: 6px;
+    font-size: 20px;
+    left: 0;
+    color: #707070;
+    transition: .4s ease-in-out;
+    z-index: -1;
+}
+
+.signAcc .Fname input[type="text"],
+.signAcc .Lname input[type="text"],
+.signAcc .signEmail input[type="email"],
+.signAcc .signPass input[type="password"],
+.signAcc .signMob input[type="tel"]{
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 20px 20px 20px 0;
+}
+
+.signAcc .Fname input[type="text"]:focus + lable,
+.signAcc .Lname input[type="text"]:focus + lable,
+.signAcc .signEmail input[type="email"]:focus + lable,
+.signAcc .signPass input[type="password"]:focus + lable,
+.signAcc .signMob input[type="tel"]:focus + lable{
+    top: -17px;
+    font-size: 13px;
+    transition: .4s ease-in-out;
+    color: #af3232;
+}
+
+
+.Fname > span {
+    display: block;
+    background: #00993f;
+    width: 100%;
+    height: 1px;
+}
+
+.Lname > span {
+    display: block;
+    background: #2b4860;
+    width: 100%;
+    height: 1px;
+}
+
+.signEmail > span {
+    display: block;
+    background: #e6001c;
+    width: 100%;
+    height: 1px;
+}
+
+.signPass > span {
+    display: block;
+    background: red;
+    width: 100%;
+    height: 1px;
+}
+
+.signSpeciality > span,
+.signMob > span {
+    display: block;
+    background: #2b4860;
+    width: 100%;
+    height: 1px;
+}
+
+.qicksign {
+    margin-top: 20px;
+}
+
+
+.help-block {
+    color: firebrick;
+    font-size: 11px;
+    text-align: right;
+}
+
+.signSpeciality {
+    width: 100%;
+    position: relative;
+}
+
+.signSpeciality lable {
+    position: absolute;
+    top: 6px;
+    font-size: 20px;
+    left: 0;
+    color: #707070;
+    transition: .4s ease-in-out;
+    z-index: -1;
+}
+
+.signSpeciality > input[list="speciality"] {
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 20px 20px 20px 0;    
+}
+/*
+#speciality:focus + lable{
+    top: -17px !important;
+    font-size: 13px !important;
+    transition: .4s ease-in-out !important;
+    color: #af3232 !important;
+}
+*/
+
+/*
+.spec{
+    color: red !important
+}
+*/
+
+/* gender */
+.switch-field {
+    font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+    overflow: hidden;
+    margin: 52px auto 0 auto;
+    text-align: center
+}
+
+.switch-title {
+    margin-bottom: 6px;
+}
+
+.switch-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+.switch-field .male ,
+.switch-field .female {
+    display: inline-block;
+    cursor: pointer;
+}
+.switch-field .male .male-r,
+.switch-field .female  .female-r{
+    display: inline-block;
+    margin-bottom: .5rem;
+    background: none;
+    width: 90px;
+    cursor: pointer;
+    color: #a9a9a9;
+    transition:.4s
+}
+
+.switch-field .male  span{
+    display: block;
+    background: #00993f;
+    width: 100%;
+    height: 2px;
+}
+.switch-field .female  span
+{
+    display: block;
+    background: #2c5686;
+    width: 100%;
+    height: 2px;
+}
+.switch-field .male input:checked + label,
+.switch-field .female input:checked + label{
+    color: #000;
+}
+
+.ex-checkbox{
+	position: relative;
+	margin: 25px 0;
+	font-size: 14px;
+}
+
+.ex-checkbox label{
+	padding-left: 32px;
+	line-height: 140%;
+	font-weight: bold;
+	display: inline-block;
+	position: relative;
+    color: #727272
+}
+
+.ex-checkbox input[type=checkbox]{
+	margin: 0;
+	opacity: 0;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	z-index: 10;
+	position: absolute;
+}
+
+.ex-checkbox input[type=checkbox] + label::before {
+	border: 1px solid #9f9f9f;
+	width: 20px;
+	height: 20px;
+	content: '';
+	position: absolute;
+	left: 0;
+    border-radius: 50%;
+    border: 2px solid #174579;
+	background-color: transparent;
+    
+}
+
+.ex-checkbox input[type=checkbox]:hover + label::before {
+	border: 2px solid #0288d1;
+}
+
+.ex-checkbox input[type=checkbox]:focus + label::before {
+	box-shadow: 0 0 1px #0288d1;
+	outline: none;
+}
+
+.ex-checkbox input[type=checkbox]:checked + label::before {
+	border: 1px solid transparent;
+	background: url('../images/ck1.svg') no-repeat center center;
+	background-size: 24px 24px;
+}
+
+.ex-checkbox input[type=checkbox]:checked:hover + label::before {
+	background-size: 30px 30px;
+}
+
+.ex-checkbox input[type=checkbox]:disabled {
+	cursor: not-allowed;
+}
+
+.ex-checkbox input[type=checkbox]:disabled + label {
+	color: #bcbcbc;
+	cursor: not-allowed;
+}
+
+.ex-checkbox input[type=checkbox]:disabled:checked + label::before {
+	border: 1px solid transparent;
+	background: url('../images/ch2.svg') no-repeat center center;
+}
+
+.ex-checkbox input[type=checkbox]:disabled + label::before {
+	border: 1px solid #bcbcbc; 
+}
+
+.haveAcc {
+    color: #3b5998;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+/*----------------------------*\
+      choose clinic
+\*-----------------------------*/
+.clinics{
+    background-image: url(../images/clinicback.jpg);
+    background-size: cover;
+}
+.clinics .logo{
+    
+}
+.clinics .logo img{
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+.clinicsHeader{
+    text-align: center;
+    
+}
+.clinicsHeader h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    display: inline;
+    text-align: center;
+    
+}
+#carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+    margin: -128px 0 0;
+  overflow: hidden;
+  
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+}
+
+#prev, 
+#next {
+  position: absolute;
+  z-index: 99999;
+  top: 50%;
+  height: 75px;
+  font-size: 1.25em;
+  color: #fff;
+  margin: -37px 0 0 0;
+  background: none;
+  border: none;
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  padding: 0 4px;
+  outline: none;
+}
+
+#prev:hover,
+#next:hover {
+  padding: 0 8px;
+  color: white;
+  cursor: pointer;
+}
+
+#prev:active,
+#next:active {
+  
+  color: #e9302d;
+}
+
+#prev {
+  left: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#next {
+  right: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#carousel-container a {
+    position: absolute;
+    top: 50%;
+    width: 283px;
+    height: 364px;
+    margin: -143px 0 0 -135px;
+    background: #fff;
+    -webkit-transition: .45s ease-in-out;
+    -moz-transition: .45s ease-in-out;
+    -o-transition: .45s ease-in-out;
+    transition: .45s ease-in-out;
+    padding: 19px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 4px 13px 4px rgba(0,0,0,0.3);
+        -moz-box-shadow:0 4px 13px 4px rgba(0,0,0,0.3);
+        -o-box-shadow: 0 4px 13px 4px rgba(0,0,0,0.3);
+        box-shadow: 0 4px 13px 4px rgba(0,0,0,0.3);
+    text-align: center;
+    text-decoration: none;
+}
+
+#carousel-container a img {
+  display: block;
+  width: 90%;
+  margin: 10px auto 3px;
+}
+
+#carousel-container a h1 {
+  color: #e9302d;
+  font-family: "Century Gothic";
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 1px;
+}
+#carousel-container a h2{
+    font-size: 22px;
+    color: #e9302d;
+}
+#carousel-container a p {
+  color: #685555;
+  font-family: "Century Gothic";
+  font-size: 23px;
+  font-weight: bold;
+  margin: 5px 0 0 0;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.previous-item {
+  left: 22%;
+  opacity: .8;
+  -webkit-transform: rotateY(65deg);
+  transform: rotateY(65deg);
+}
+
+.displayed-item {
+  left: 50%;
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+    z-index: 999
+}
+
+.next-item {
+  left: 78%;
+  opacity: .8;
+  -webkit-transform: rotateY(-65deg);
+  transform: rotateY(-65deg);
+}
+
+.inline-previous {
+  left: -25%;
+  opacity: .1;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+.inline-next {
+  left: 125%;
+  opacity: .1;
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+
+@media (max-width: 575px) {
+    .clinics .logo{
+        text-align: center
+    }
+    #prev, 
+    #next {
+      font-size: 1.0em;
+      color: #194779;
+
+    }
+    #prev:hover, 
+    #next:hover {
+      color: #194779;
+
+    }
+
+        #prev {
+      left: 20px;
+
+    }
+
+    #next {
+      right: 20px;
+
+    }
+
+}
+@media (max-height: 360px){
+    .clinics .logo img{
+        width: 100px;
+    }
+    #carousel-container{
+        margin: -76px 0 0;
+    }
+    #carousel-container a {
+    top: 58%;
+    width: 211px;
+    height: 260px;
+    margin: -143px 0 0 -106px;
+    ;
+}
+    #prev, 
+    #next {
+      font-size: 1.0em;
+    }
+        #prev {
+      left: 20px;
+    }
+
+    #next {
+      right: 20px;
+
+    }
+    .clinicsHeader h1{
+        display: none
+    }
+        #carousel-container a h1 {
+  font-size: 15px;
+}
+#carousel-container a h2{
+    font-size: 15px;
+
+}
+#carousel-container a p {
+  font-size: 19px;
+
+}
+}
