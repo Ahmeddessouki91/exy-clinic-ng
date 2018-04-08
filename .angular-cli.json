@@ -19,9 +19,21 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "assets/css/bootstrap-reboot.min.css",
+        "assets/css/bootstrap-grid.min.css",
+        "assets/css/bootstrap.min.css",
+        "assets/css/fontawesome-all.min.css",
+        "assets/css/Screen.min.css",
+        "assets/css/Style.css",                        
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/js/jquery-3.3.1.min.js",
+        "assets/js/bootstrap.min.js",
+        "assets/js/nsc.js",
+        "assets/js/tether.min.js",        
+        "assets/js/main.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
